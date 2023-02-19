@@ -3,6 +3,16 @@
 	
 
 }
+.centre
+{
+	text-align: center;
+	font-family: "comic sans MS", cursive, sa,sans-serif;
+	font-size: 24px;
+	margin-top: 50px;
+}
+.titre{
+	color: gold;
+}
 #logo{
 	text-align: center;
 
@@ -12,43 +22,6 @@
 	background-color: gold;
 
 }
-#carroussel{
-
-	width: 640px;
-	overflow: auto;
-	border: 7px solid #333;
-	border-color: gold;
-
-	
-}
-.images{
-	display: flex;
-	animation-duration: 10s;
-	animation-name: animimage;
-	animation-iteration-count:infinite ;
-	
-
-}
-@keyframes animimage {
-	0%{
-		transform: translateX(0px);
-	}
-	33%{
-		transform: translateX(-640px);
-	}
-	66%{
-		transform: translateX(-1280px);
-	}
-	100%{
-		transform: translateX(0px);
-	}
-
-}
-
-#promoteursemaine{
-	text-align: center;
-}
-
 
 
 
@@ -101,3 +74,129 @@ form button{
 	font-size: 15px;
 	cursor: pointer;
 }
+#countdown {
+      width: 500px;
+      height: 100px;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      color: #333;
+      margin: 50px auto;
+    
+     
+      
+    }
+
+  h1 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+    h2 {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+        h3 {
+        color: black;
+        margin: 0;
+        font-size: 60px;
+        text-shadow: 2px 2px #ccc;
+        animation: text-glow 1s ease-in-out infinite alternate;
+      }
+h4 {
+	color: gold;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .presentation {
+        width: 80%;
+        margin: 0 auto;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+
+      .highlight {
+        font-weight: bold;
+      }
+
+.introcarousel{
+	text-align: center;
+}
+  .carousel {
+        width: 500px;
+        height: 300px;
+        margin: 50px auto;
+        border: 10px solid gold;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .active-slide {
+        opacity: 1;
+      }
+
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+
+
+.container {
+        display: flex;
+        height: 100vh;
+      }
+
+      .left-section {
+        background-color: gold;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .right-section {
+        background-color: #333;
+        color: gold;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+         display: flex;
+        flex-direction: column;
+      }
+
+
+ 
+
+    
+
+      @keyframes text-glow {
+        from {
+          text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold, 0 0 20px gold, 0 0 30px gold, 0 0 40px gold, 0 0 55px gold, 0 0 75px gold;
+        }
+        to {
+          text-shadow: 0 0 5px #333, 0 0 10px #333, 0 0 15px #333, 0 0 20px #333, 0 0 30px #333, 0 0 40px #333, 0 0 55px #333, 0 0 75px #333;
+        }
+      }

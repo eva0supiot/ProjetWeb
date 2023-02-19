@@ -15,47 +15,112 @@
 
 
 	<div class="centre">
-		<p>MOTS DE BIENVENUE</p>
-		<p>Chez BEE IMMOBILIER, vous pourrez butiner les appartements dont vous revez !</p>	
+		<p>Chez <span class="titre">BEE IMMOBILIER</span>, vous pourrez butiner les appartements dont vous revez !</p>	
+		
 	</div>
+	 
+    <div class="presentation">
+      <p>Bee Immobilier est une agence immobilière de renom qui se consacre à aider les gens à trouver le logement de leurs rêves. Avec une équipe expérimentée et dévouée, nous offrons un service personnalisé à chaque client pour répondre à leurs besoins uniques. Nous sommes fiers de notre capacité à comprendre les attentes de nos clients et à les satisfaire grâce à notre vaste connaissance du marché immobilier local.</p>
+      <p>Notre agence propose une grande sélection de propriétés, allant des appartements aux maisons individuelles en passant par les immeubles de rapport. Nous travaillons avec diligence pour trouver le bien idéal pour nos clients en fonction de leur budget, de leur emplacement préféré et de leurs exigences en matière de caractéristiques de la propriété.</p>
+      
+    </div>
 
 
-	<div id="evenement">
+	<h2>EVENEMENT DE LA SEMAINE</h2>
+
+<div class="container">
+      <div class="left-section">
+        <div id="evenement">
 		<br>
-		<p>EVENEMENT DE LA SEMAINE</p>
-		<p>Pour la semaine des abeilles, venez nous rejoindre à la ruche pour tenter de gagner</p>
+		
+		<p>il vous reste....</p>	
+		<br>
+
+	
+	<div id="countdown">
+	<script type="text/javascript">
+		var targetDate = new Date("April 1, 2023 00:00:00").getTime();
+
+    // Actualiser le compte à rebours toutes les 1 secondes
+    setInterval(function() {
+
+      // Obtenir la date et l'heure actuelles
+      var currentDate = new Date().getTime();
+
+      // Trouver la différence entre les deux dates
+      var difference = targetDate - currentDate;
+
+      // Calculer le nombre de jours, heures, minutes et secondes restants
+      var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      // Afficher le compte à rebours dans le div
+      document.getElementById("countdown").innerHTML = days + " jours " + hours + " heures " + minutes + " minutes " + seconds + " secondes ";
+
+      // Si le compte à rebours est terminé, afficher "Temps écoulé"
+      if (difference < 0) {
+        document.getElementById("countdown").innerHTML = "Temps écoulé";
+      }
+    }, 1000);
+		
+	</script></div>
+	<p>...Pour participer au grand tirage au sort pour tenter de gagner</p>
 		<h1>15%</h1>
-		<p>sur votre prochain achat à la tombola</p>
+
+		<p>Sur toute acquisition d'un logement équipé d'une ruche</p>
 		<br>
+</div>
+      </div>
+      <div class="right-section">
+        <h3>Séminaire sur les abeilles</h3> 
+        <p>Venez nous rencontrer ce lundi à partir de </p>  
+        <h3>10:00</h3>
+        <p>chez nous pour découvrir la méthode de fabrication du miel ! </p> 
 
-	</div>
+         </div>
+    </div>
 
 
-	<p>NOS HIGHLIGHTS DE LA SEMAINE</p>
+
+
+ <div class="introcarousel">
+	
 	<br>
-	<h3>Les nouveautés de la semaine</h3>
+	<h2>LES NOUVEAUTES DE LA SEMAINE</h2>
 	<br>
+</div>
 
 
-	<div id="carroussel">
-		<div class="images">
-			<img src="maison2.gif" alt="maison2">
-			<img src="maison3.gif" alt="maison3">
-			<img src="maison4.gif" alt="maison4">	
-		</div>		
-	</div>
+ <div class="carousel">
+      <div class="slide active-slide">
+        <img src="maison2.gif" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="maison3.gif" alt="Image 2">
+      </div>
+      <div class="slide">
+        <img src="maison4.gif" alt="Image 3">
+      </div>
+    </div>
 
+    <script>
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+      let slideInterval = setInterval(nextSlide, 2000);
 
-	<div id="promoteursemaine">
-		<h3>Le promoteur de la semaine</h3>
-		<img src="promoteur_semaine.gif">	
-	</div>
-
+      function nextSlide() {
+        slides[currentSlide].classList.remove('active-slide');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active-slide');
+      }
+    </script>
 
 
 	<div class="footer">
 		<div class="colonne1">
-			<h3>CONTACT</h3>
+			<h4>CONTACT</h4>
 			<a href="#">Numéro</a>
 			<a href="#">Facebook</a>
 			<a href="#">Instagram</a>
@@ -63,7 +128,7 @@
 			
 		</div>
 		<div class="colonne2">
-			<h3>NEWSLETTER</h3>
+			<h4>NEWSLETTER</h4>
 			<form>
 				<input type="email" placeholder="Your Email Adress"required>
 				<br>
@@ -71,12 +136,16 @@
 			</form>
 		</div>
 		<div class="colonne3">
-			<h3>NOUS TROUVER</h3>
+			<h4>NOUS TROUVER</h4>
 			
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10506.347611780462!2d2.3194224405815005!3d48.827942868550615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cc2b900d7b8bfb%3A0x411bbf6ab575f1af!2sBeemmo%20-%20agence%20immobili%C3%A8re%20Paris!5e0!3m2!1sfr!2sfr!4v1675626245469!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</div>
 
+
 </body>
-<footer></footer>
+<footer>
+	
+
+</footer>
 </html>
