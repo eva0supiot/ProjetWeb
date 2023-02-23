@@ -200,3 +200,56 @@ h4 {
           text-shadow: 0 0 5px #333, 0 0 10px #333, 0 0 15px #333, 0 0 20px #333, 0 0 30px #333, 0 0 40px #333, 0 0 55px #333, 0 0 75px #333;
         }
       }
+
+      table{
+      margin: auto;
+      width: 400px;
+      max-width: 400px;
+      height: 200px;
+      text-align: center;
+      border-radius: 4px;
+      padding-right: 10px;
+    }
+
+    .table1{
+      background-color: #333;
+      color: gold;
+      height: 300px;
+    }
+
+    .ZoneTexte{
+      background-color: white;
+      color: black;
+      height: 50px;
+    }
+    .bouttonFormulaire
+    {
+      position: relative;
+      left: 5px;
+      top: 5px;
+      border: 0;
+      color: #333;
+      background-color: gold;
+      border-radius: 4px;
+      width: 200px;
+      height: 20px;
+      margin: 5px;
+      margin-bottom: 15px;
+    }
+
+    #boutton
+    {
+      position: relative;
+      left: 5px;
+      top: 5px;
+      border: 0;
+      color: #495069;
+      background-color: gold;
+      border-radius: 4px;
+      width: 200px;
+      height: 50px;
+      float: left;
+      margin: 5px;
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
