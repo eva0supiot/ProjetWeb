@@ -5,12 +5,12 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style1.css" />       
+        <link rel="stylesheet" href="cal.css" />       
         <title>Booking Page</title>
     </head>
 
     <body>
-        <script type="text/javascript" src="script1.js"></script>
+        <script type="text/javascript" src="cal.js"></script>
         
         
           
