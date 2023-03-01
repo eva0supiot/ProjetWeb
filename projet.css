@@ -1,0 +1,30 @@
+body { background-color: black;
+color: #003300;
+font-family: Times New Roman, sans-serif; 
+}
+
+h2 { 
+background-color: #ffffcc; color: #003366;
+}
+
+h3{ 
+background-color: black;
+color: white;
+}
+
+h4{ background-color: black;
+color: #f9eac3;
+}
+
+h5{ background-color: black;
+color: #f9eac3;
+}
+
+table, th, tr, td{ 
+border: 2px solid white;
+border-collapse: collapse;
+}
+
+th, tr, td{ 
+padding: 10px;
+}
