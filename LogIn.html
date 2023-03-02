@@ -4,8 +4,81 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Log In page</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="tout_parcourir.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-	<h1> Bienvenue dans la page de connexion</h1>
+<nav>
+	<ul>
+		<li><a href="#">Accueil</a>
+
+		<li class="tout_parcourir"><a href="#">Tout Parcourir &ensp;</a>
+			<ul class="immo">
+				<li><a href="immo_res.html">Immobilier résidentiel</a></li>
+				<li><a href="#">Immobilier commercial</a></li>
+				<li><a href="#">Terrain</a></li>
+				<li><a href="#">Appartement à louer</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Recherche</a></li>
+		<li><a href="#">Rendez-vous</a></li>
+		<li><a href="ConnexionPage.html">Mon Compte</a></li>
+	</ul>
+</nav>
+
+<div class="centre">
+	<p>
+		Bienvenue dans votre<span class="titre"> espace personnelle.</span>Connectez-vous avez votre BEE compte pour continuer</p>
+</div>
+<br><br>
+
+<div>
+	<table class="table2"  border="2">
+		<form>
+			<tr>
+				<td>Adresse Mail</td>
+				<td>
+					<input type="text" name="eMail">
+				</td>
+			</tr>
+			<tr>
+				<td>Mot de Passe</td>
+				<td>
+					<input type="password" name="mdp">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Valider"class ="bouttonFormulaire">
+				</td>
+			</tr>
+		</form>
+
+	</table>
+</div>
+
+<div class="footer">
+	<div class="colonne1">
+		<h4>CONTACT</h4>
+		<a href="#">Numéro</a>
+		<a href="#">Facebook</a>
+		<a href="#">Instagram</a>
+		<a href="#">E-mail</a>
+
+	</div>
+	<div class="colonne2">
+		<h4>NEWSLETTER</h4>
+		<form>
+			<input type="email" placeholder="Your Email Adress"required>
+			<br>
+			<button type="submit">SUBSCRIBE NOW</button>
+		</form>
+	</div>
+	<div class="colonne3">
+		<h4>NOUS TROUVER</h4>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10506.347611780462!2d2.3194224405815005!3d48.827942868550615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cc2b900d7b8bfb%3A0x411bbf6ab575f1af!2sBeemmo%20-%20agence%20immobili%C3%A8re%20Paris!5e0!3m2!1sfr!2sfr!4v1675626245469!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</div>
 </body>
 </html>
