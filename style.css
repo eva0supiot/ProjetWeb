@@ -60,7 +60,6 @@ form input{
 	margin-bottom: 40px;
 	outline:none ;
 	border :none;
-
 }
 form button{
 	background: transparent;
@@ -209,28 +208,13 @@ h4 {
     .table2{
           background-color: #333;
           color: gold;
-          height: 100px;
-       }
+          height: 1000px;
+   }
 
     .ZoneTexte{
-      background-color: white;
+      background-color: gold;
       color: black;
       height: 50px;
-    }
-
-    .bouttonFormulaire
-    {
-      position: relative;
-      left: 5px;
-      top: 5px;
-      border: 0;
-      color: #333;
-      background-color: gold;
-      border-radius: 4px;
-      width: 200px;
-      height: 20px;
-      margin: 5px;
-      margin-bottom: 15px;
     }
 
     #boutton
@@ -243,9 +227,16 @@ h4 {
       background-color: gold;
       border-radius: 4px;
       width: 200px;
-      height: 50px;
+      height: 100px;
       float: left;
       margin: 5px;
       font-size: 25px;
       margin-bottom: 15px;
     }
+    .bouttonFormulaire
+        {
+          color: #333;
+          background-color: gold;
+          height: 30px;
+          width: 300px;
+        }
