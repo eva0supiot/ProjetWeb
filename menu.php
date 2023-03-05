@@ -19,6 +19,6 @@
     </li>
     <li><a href="#">Recherche</a></li>
     <li><a href="#">Rendez-vous</a></li>
-    <li><a href="#">Mon Compte</a></li>
+    <li><a href="monCompte.php">Mon Compte</a></li>
   </ul>
 </nav>
