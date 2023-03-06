@@ -1,0 +1,18 @@
+body { background-color: black;
+color: white;
+font-family: Times New Roman, sans-serif; 
+} h2 { 
+background-color: #ffffcc; color: white;
+} h3{ 
+background-color: black;
+color: white;
+} h4{ background-color: black;
+color: #f9eac3;
+} h5{ background-color: black;
+color: #f9eac3;
+} table, th, tr, td{ 
+border: 2px solid white;
+border-collapse: collapse;
+} th, tr, td{ 
+padding: 10px;
+}Dispose d’un menu contextuel

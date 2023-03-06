@@ -65,7 +65,7 @@
  font-weight: bold;
 
 }
-Page 12 sur 13
+
 
  #chatbox {
  text-align: left;
@@ -85,21 +85,21 @@ Page 12 sur 13
  #usermsg {
  flex: 1;
  border-radius: 4px;
- border: 1px solid #ff9800;
+ border: 1px solid black;
 
 }
 
  #name {
  border-radius: 4px;
- border: 1px solid #ff9800;
+ border: 1px solid black;
  padding: 2px 8px;
 
 }
 
  #submitmsg,
  #enter{
- background: #ff9800;
- border: 2px solid #e65100;
+ background: gold;
+ border: 2px solid black;
  color: white;
  padding: 4px 10px;
  font-weight: bold;
@@ -125,7 +125,7 @@ Page 12 sur 13
 
  a#exit {
  color: white;
- background: #c62828;
+ background: gold;
  padding: 4px 8px;
  border-radius: 4px;
  font-weight: bold;
@@ -150,7 +150,7 @@ Page 12 sur 13
 
  .msgln b.user-name, .msgln b.user-name-left {
  font-weight: bold;
- background: #546e7a;
+ background: grey;
  color: white;
  padding: 2px 4px;
  font-size: 90%;
@@ -159,5 +159,5 @@ Page 12 sur 13
  }
 
  .msgln b.user-name-left {
- background: orangered;
+ background: gold;
  }
