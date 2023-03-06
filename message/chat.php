@@ -50,6 +50,7 @@ session_start();
  ?>
  <div id="wrapper">
  <div id="menu">
+
  <p class="welcome">Bienvenue, <b><?php echo $_SESSION['name']; ?></b></p>
  <p class="logout"><a id="exit" href="#">Quitter la conversation</a></p>
  </div>
@@ -104,5 +105,4 @@ session_start();
 </html>
 <?php
 }
-
 ?>
