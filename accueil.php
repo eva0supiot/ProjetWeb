@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,29 +9,13 @@
 <body>
 	<h2 class="demoDate"></h2>
 	<script src="app.js" type="text/javascript"></script>
-	<div id="logo">
-	<img src="logo_bee.gif" />
-	</div>
-<nav>
-  <ul>
-    <li><a href="#">Accueil</a></li>
-
-    <li class="tout_parcourir"><a href="#">Tout Parcourir &ensp;</a>
-      <ul class="immo">
-        <li><a href="immo_res.html">Immobilier résidentiel</a></li>
-        <li><a href="immo_com.html">Immobilier commercial</a></li>
-        <li><a href="terrain.html">Terrain</a></li>
-        <li><a href="appart_loue.html">Appartement à louer</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Recherche</a></li>
-    <li><a href="#">Rendez-vous</a></li>
-    <li><a href="#">Mon Compte</a></li>
-  </ul>
-</nav>
-
+	
+<?php include('menu.php'); ?>
 	<div class="centre">
 		<p>Chez <span class="titre">BEE IMMOBILIER</span>, vous pourrez butiner les appartements dont vous revez !</p>	
+		<div id="logo">
+	<img src="logo_bee.gif" />
+	</div>
 		
 	</div>
 	 
@@ -112,13 +95,13 @@
 
  <div class="carousel">
       <div class="slide active-slide">
-        <img src="maison2.gif" alt="Image 1">
+        <img src="bien1.png" alt="Image 1">
       </div>
       <div class="slide">
-        <img src="maison3.gif" alt="Image 2">
+        <img src="bien2.png" alt="Image 2">
       </div>
       <div class="slide">
-        <img src="maison4.gif" alt="Image 3">
+        <img src="bien3.png" alt="Image 3">
       </div>
     </div>
 
@@ -138,20 +121,12 @@
 	<div class="footer">
 		<div class="colonne1">
 			<h4>CONTACT</h4>
-			<a href="#">Numéro</a>
-			<a href="#">Facebook</a>
-			<a href="#">Instagram</a>
-			<a href="#">E-mail</a>
+			<a href="tel:+33788374000">Téléphone</a>
+			
+			<a href="mailto:julie.legrand@edu.ece.fr">E-mail</a>
 			
 		</div>
-		<div class="colonne2">
-			<h4>NEWSLETTER</h4>
-			<form>
-				<input type="email" placeholder="Your Email Adress"required>
-				<br>
-				<button type="submit">SUBSCRIBE NOW</button>
-			</form>
-		</div>
+		
 		<div class="colonne3">
 			<h4>NOUS TROUVER</h4>
 			
@@ -165,4 +140,3 @@
 	
 
 </footer>
-</html>

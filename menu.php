@@ -7,7 +7,7 @@
 
 <nav>
   <ul>
-    <li><a href="#">Accueil</a></li>
+    <li><a href="accueil.html">Accueil</a></li>
 
     <li class="tout_parcourir"><a href="#">Tout Parcourir &ensp;</a>
       <ul class="immo">
