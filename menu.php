@@ -1,4 +1,3 @@
-
 <head>
 	<link href="tout_parcourir.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -7,7 +6,7 @@
 
 <nav>
   <ul>
-    <li><a href="accueil.html">Accueil</a></li>
+    <li><a href="#">Accueil</a></li>
 
     <li class="tout_parcourir"><a href="#">Tout Parcourir &ensp;</a>
       <ul class="immo">
@@ -19,6 +18,6 @@
     </li>
     <li><a href="#">Recherche</a></li>
     <li><a href="#">Rendez-vous</a></li>
-    <li><a href="monCompte.php">Mon Compte</a></li>
+    <li><a href="#">Mon Compte</a></li>
   </ul>
 </nav>
