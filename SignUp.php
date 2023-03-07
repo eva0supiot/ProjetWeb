@@ -72,6 +72,28 @@
 					</td>
 				</tr>
 				<tr>
+	              <td>
+	                Adresse mail
+	              </td>
+	              <td>
+	                <input type="text" name="mail">
+	              </td>
+	            </tr>
+			    <tr>
+              	   <td>
+	                Mot de Passe
+	              </td>
+	              <td>
+	                <input type="password" name="mdp">
+	              </td>
+	            </tr>
+	            <tr>
+	              <td>Confirmer Mot de Passe</td>
+	              <td>
+	                <input type="password" name="motDePasse">
+	              </td>
+	            </tr>
+				<tr>
 					<td colspan="2" align="center">
 						<input class="bouttonFormulaire" type="submit" name="submit" value="Valider">
 					</td>
