@@ -15,7 +15,7 @@
 
 <center>
 <a href="chat.php"><img src="Service_de_messagerie.png" alt="Home" width="150" height="150">
-<a href="communiquer.html"><img src="envoyer_email.png" alt="Home" width="150" height="150">
+<a href="test.php"><img src="envoyer_email.png" alt="Home" width="150" height="150">
 
 
 </body>
