@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 07 mars 2023 à 09:18
+-- Généré le : mar. 07 mars 2023 à 16:32
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -38,21 +38,22 @@ CREATE TABLE IF NOT EXISTS `clients` (
   `Pays` varchar(50) NOT NULL,
   `Téléphone` int(11) NOT NULL,
   `Email` varchar(255) NOT NULL,
-  `Mot de Passe` varchar(100) NOT NULL,
+  `MotDePasse` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `clients`
 --
 
-INSERT INTO `clients` (`ID`, `Nom`, `Prenom`, `Adresse`, `Ville`, `Code Postal`, `Pays`, `Téléphone`, `Email`, `Mot de Passe`) VALUES
+INSERT INTO `clients` (`ID`, `Nom`, `Prenom`, `Adresse`, `Ville`, `Code Postal`, `Pays`, `Téléphone`, `Email`, `MotDePasse`) VALUES
 (4, 'Picot', 'Baptiste', '28 Boulevard Clémenceau', 'Cormeilles', 95240, 'FRANCE', 681576268, 'baptiste.picot@exemple.com', '123'),
 (2, 'Supiot', 'Eva', 'bonne question', 'Anthony', 91000, 'FRANCE', 681576278, 'eva.supiot@exemple.com', 'supsup'),
 (5, 'Picot', 'Pierre', '28 Boulevard ClÃ©menceau', 'Cormeilles', 95240, 'FRANCE', 681570906, 'pierre.picot@exemple.com', '123'),
 (6, 'Picot', 'Alice', '28 Boulevard ClÃ©menceau', 'Cormeilles', 95240, 'FRANCE', 681572001, 'alice.picot@exemple.com', '123'),
 (7, 'Picot', 'Baptiste', '28 boulevard ClÃ©menceau', 'Cormeilles En Parisis', 95240, 'France', 781576272, 'baptiste.picot@edu.ece.fr', '123'),
-(8, 'Picot', 'Sandrine', '28 boulevard ClÃ©menceau', 'Cormeilles En Parisis', 95240, 'France', 781576272, 'sandrine.picot@edu.ece.fr', '1');
+(8, 'Picot', 'Sandrine', '28 boulevard ClÃ©menceau', 'Cormeilles En Parisis', 95240, 'France', 781576272, 'sandrine.picot@edu.ece.fr', '1'),
+(15, 'Picot', 'Baptiste', '28 boulevard ClÃ©menceau', 'Cormeilles En Parisis', 95240, 'France', 781576272, 'baptiste.picot@edu.esilv.fr', '1');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

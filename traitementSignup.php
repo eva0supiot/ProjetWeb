@@ -58,35 +58,43 @@
 		 if($erreur==""):
 		 	if($password==$password2):
 	            
-	                  echo "Inscription validée";
-	                  $database = "projetweb";
+                $database = "projetweb";
 				$db_handle = mysqli_connect('localhost','root','');
 				$db_found = mysqli_select_db($db_handle, $database);
 
 				if($db_found):
-				
+
 					$sql="";
-					$sql = "INSERT INTO clients VALUES (ID,'$name','$firstname','$adress','$city',$cp,'$country',$phone,'$email','$password')";
+					$sql="SELECT * FROM `clients` WHERE Email='$email'";
 					$result = mysqli_query($db_handle, $sql);
-				 	//fermer la co
-					mysqli_close($db_handle);
+					$data=mysqli_fetch_assoc($result);
 
-					?>
-					<div class="centre">
-					<p>
-						Votre<span class="titre"> espace personnelle</span> a bien été crée. Connectez-vous avez votre BEE compte pour continuer</p>
-					</div>
+					if($data) :
+						echo "Adresse mail déjà utilisée";
+					else:
+						$sql="";
+						$sql = "INSERT INTO clients VALUES (ID,'$name','$firstname','$adress','$city',$cp,'$country',$phone,'$email','$password')";
+						$result = mysqli_query($db_handle, $sql);
+					 	//fermer la co
+						mysqli_close($db_handle);
 
-					<div class = "centre">
-						<form>
-							<table>
-								<td>
-									<a id="boutton" href="login.php">Connexion</a>
-								</td>
-							</table>
-						</form>
-					</div>
-					<?php
+						?>
+						<div class="centre">
+						<p>
+							Votre<span class="titre"> espace personnelle</span> a bien été crée. Connectez-vous avez votre BEE compte pour continuer</p>
+						</div>
+
+						<div class = "centre">
+							<form>
+								<table>
+									<td>
+										<a id="boutton" href="login.php">Connexion</a>
+									</td>
+								</table>
+							</form>
+						</div>
+						<?php
+					endif;			
 				
 				else:
 					echo "<br> database not found";
