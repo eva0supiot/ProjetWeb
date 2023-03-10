@@ -19,7 +19,7 @@
 		<form>
 			<table>
 				<td>
-					<a id="boutton" href="login.php">Connexion</a>
+					<a id="boutton" href="login.php?table=clients">Connexion</a>
 				</td>
 				<td>
 					<a id="boutton" href="signup.php">S'inscrire</a>

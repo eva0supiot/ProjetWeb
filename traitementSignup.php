@@ -88,7 +88,7 @@
 							<form>
 								<table>
 									<td>
-										<a id="boutton" href="login.php">Connexion</a>
+										<a id="boutton" href="login.php?table=clients">Connexion</a>
 									</td>
 								</table>
 							</form>

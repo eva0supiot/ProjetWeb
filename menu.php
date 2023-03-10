@@ -20,6 +20,12 @@
     </li>
     <li><a href="recherche.php">Recherche</a></li>
     <li><a href="#">Rendez-vous</a></li>
-    <li><a href="monCompte.php">Mon Compte</a></li>
+    <li><a href="monCompte.php">Mon Compte</a>
+        <ul class="immo">
+        <li><a href="monCompte.php">Clients</a></li>
+        <li><a href="login.php?table=administrateurs">Administrateurs</a></li>
+        <li><a href="login.php?table=agents">Agents</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>

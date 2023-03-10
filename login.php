@@ -10,10 +10,15 @@
 </head>
 <body>
     <!-- En tête d'Eva -->
-	<?php include('Menu.php'); ?>
+	<?php 
+	include('Menu.php');
+	if (isset($_GET['table'])) {
+			$table = $_GET['table'];
+		}
+	 ?>
 
 <table class="table2" border="2">
-	<form action="traitementLogin.php" method="post">
+	<form action="traitementLogin.php?table=<?php echo $table; ?>" method="post">
 
 		<tr>
 			<td>

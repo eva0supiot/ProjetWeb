@@ -13,6 +13,10 @@
 	 	$erreur.="Le champ mot de passe est vide. <br>";
 	 }
 
+	 if (isset($_GET['table'])) {
+			$table = $_GET['table'];
+		}
+
 	 if($erreur==""):
 
 	 	/***** Connexion à la base de donnée projetweb *****/
@@ -23,7 +27,7 @@
 		if($db_found):	// si on trouve la BDD 
 			/***** Requette permettant de trouvé un client à partir de son adresse mail et de son mot de passe *****/
 			$sql="";
-			$sql="SELECT * FROM `clients` WHERE Email='$email' AND MotDePasse ='$password'";
+			$sql="SELECT * FROM `$table` WHERE Email='$email' AND MotDePasse ='$password'";
 			$result = mysqli_query($db_handle, $sql);
 			$data=mysqli_fetch_assoc($result);
 
@@ -31,7 +35,7 @@
 				echo "Autentification réussi Bonjour ". $data['Prenom'];
 				?> <a href="userCompte.php?id=<?php echo $data['ID']; ?>">Cliquez ici pour vous connecter <?php echo $data['Prenom']; ?></a> <?php
 			else:	// Utilisateur n'est pas dans la BDD
-				echo "utilisateur introuvable";
+				echo $table." introuvable";
 			endif;
 
 			//close database
