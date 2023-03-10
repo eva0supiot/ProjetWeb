@@ -33,7 +33,20 @@
 
 			if($data):	// on trouve la BDD
 				echo "Autentification réussi Bonjour ". $data['Prenom'];
-				?> <a href="userCompte.php?id=<?php echo $data['ID']; ?>">Cliquez ici pour vous connecter <?php echo $data['Prenom']; ?></a> <?php
+				if($table=='clients'):
+					?> 
+					<a href="userClients.php?id=<?php echo $data['ID']; ?>">Cliquez ici pour vous connecter <?php echo $data['Prenom']; ?></a>
+					<?php
+				elseif ($table=='administrateurs'):
+					?> 
+					<a href="userAdministrateurs.php?id=<?php echo $data['ID']; ?>">Cliquez ici pour vous connecter <?php echo $data['Prenom']; ?></a>
+					<?php
+				elseif ($table=='agents'):
+					?> 
+					<a href="userAgents.php?id=<?php echo $data['id']; ?>">Cliquez ici pour vous connecter <?php echo $data['Prenom']; ?></a>
+					<?php
+				endif;
+					
 			else:	// Utilisateur n'est pas dans la BDD
 				echo $table." introuvable";
 			endif;
