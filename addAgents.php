@@ -10,9 +10,12 @@
 </head>
 <body>
 	<!-- En tête d'Eva -->
-    <?php include('Menu.php'); ?>
+    <?php include('menuAdmi.php'); ?>
 
-		<table class="table2" border="2">
+    <div>
+    	<br>
+    	<br>
+    	<table class="table2" border="2">
 			<form action="traitementAddAgents.php" method="post">
 
 				<tr>
@@ -94,8 +97,7 @@
 				</tr>
 			</form>
 		</table>
-
-	</div>
+    </div>
 
 	<div class="footer">
 		<div class="colonne1">
