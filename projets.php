@@ -1,12 +1,12 @@
 <?php
 //vérification
-if(!isset($_GET["idAgent"]) || empty($_GET["idAgent"])){
+if(!isset($_GET["id"]) || empty($_GET["id"])){
 	// pas d'id
 	header("Location: carroussel.php");
 	exit;}
 
 // récup de l'id
-$idAgent = $_GET["idAgent"];
+$id= $_GET["id"];
 
 try
 {
@@ -20,11 +20,13 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-$sql ="SELECT * FROM `agents` WHERE `idAgent` = :idAgent";
+$sql ="SELECT * FROM `agents` WHERE `id` = :id";
 $requete = $mysqlClient->prepare($sql);
-$requete->bindValue(":idAgent",$idAgent, PDO::PARAM_INT);
+$requete->bindValue(":id",$id, PDO::PARAM_INT);
 $requete->execute();
 $agents = $requete->fetch();
+
+
 
 // article vide?
 if(!$agents){
@@ -32,7 +34,7 @@ if(!$agents){
 	echo "Agent indisponible";
 	exit;}
 
-$titre=strip_tags($agents["prenomAgent"]);
+$titre=strip_tags($agents["Prenom"]);
 
 ?>
 
@@ -43,15 +45,16 @@ $titre=strip_tags($agents["prenomAgent"]);
 	<title><?php echo $titre ?></title>
 </head>
 
-<h3><center><?php echo $agents["prenomAgent"] ?> <?php echo $agents["nomAgent"] ?></p></h3><br>
+<body>
+<h3><center><?php echo $agents["Prenom"] ?> <?php echo $agents["nomAgent"] ?></p></h3><br>
 
-<center><a href="agent-immobilier<?php echo $agents["idAgent"]?>.jpeg"><img class="property" src="agent-immobilier<?php echo $agents["idAgent"]?>.jpeg" width="300" height="200" ></a><br>
+<center><a href="agent-immobilier<?php echo $agents["id"]?>.jpeg"><img class="property" src="agent-immobilier<?php echo $agents["id"]?>.jpeg" width="300" height="200" ></a><br>
 
 <h4>
 <ul>
 <li>Spécialité: <?php echo $agents["specialite"] ?></li>
 <li>Téléphone: +33 0<?php echo $agents["num"] ?></li>
-<li>Email: <?php echo $agents["emailClient"] ?></li>
+<li>Email: <?php echo $agents["Email"] ?></li>
 </ul>
 
 <h3>Disponibilité:</h3>
@@ -66,10 +69,10 @@ $titre=strip_tags($agents["prenomAgent"]);
 <br><br>
 
 <center>
-<a href="rdv.html"><img src="PRENDRE RENDEZ-VOUS.png" alt="Home" width="150" height="150">
+<a href="cal.php?id=<?=$agents["id"]?>"><img src="PRENDRE RENDEZ-VOUS.png" alt="Home" width="150" height="150">
 <a href="communiquer.html"><img src="PRENDRE RENDEZ-VOUS 2.png" alt="Home" width="150" height="150">
-<a href="CV.html"><img src="PRENDRE RENDEZ-VOUS 3.png" alt="Home" width="150" height="150">
+<a href="CV.php?id=<?=$agents["id"]?>"><img src="PRENDRE RENDEZ-VOUS 3.png" alt="Home" width="150" height="150">
 
 </body>
 
-<?php
+

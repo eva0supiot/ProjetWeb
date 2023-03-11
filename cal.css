@@ -2,6 +2,7 @@ body
 {
     
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9eac3;
 }
 
 
@@ -44,7 +45,7 @@ body
 
 
 
-input[type=button]
+input[type=submit]
 {   
     text-decoration: none;
     justify-content: center;    
@@ -58,8 +59,3 @@ input[type=button]
     font-weight: bold;
     border-radius: 1rem;
 }
-
-
-
-
-
