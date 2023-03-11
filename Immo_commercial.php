@@ -35,7 +35,12 @@ foreach($agents as $res){
 	</res>
 </section>
 
-</body>
-
 <?php
 }?>
+
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
+
+</body>
+
+

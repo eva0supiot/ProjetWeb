@@ -88,4 +88,7 @@
  <!-- </table> -->
 </div>
 	
+  <!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
+
 </body>

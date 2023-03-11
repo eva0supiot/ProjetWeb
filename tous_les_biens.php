@@ -139,3 +139,6 @@ foreach($immo_terrain as $res){
 <?php
 }
 ?>
+
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>

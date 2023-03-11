@@ -54,3 +54,6 @@ foreach($immo_commerce as $res){
 <?php
 }
 ?>
+
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>

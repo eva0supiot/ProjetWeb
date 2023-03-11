@@ -8,7 +8,7 @@
 </head>
 <body>
 	<!-- pour inclure le menu -->
-<?php include('menuAdmi.php'); ?>
+	<?php include('menuAdmi.php'); ?>
 
 <br> <br> <br> <br>
 
@@ -52,5 +52,9 @@ foreach($immo_appart as $res){
 <?php
 }
 ?>
+
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
+
 </body>
 </html>

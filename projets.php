@@ -46,6 +46,10 @@ $titre=strip_tags($agents["Prenom"]);
 </head>
 
 <body>
+
+	<!-- pour inclure le menu --> 
+<?php include('menu.php'); ?>
+
 <h3><center><?php echo $agents["Prenom"] ?> <?php echo $agents["nomAgent"] ?></p></h3><br>
 
 <center><a href="agent-immobilier<?php echo $agents["id"]?>.jpeg"><img class="property" src="agent-immobilier<?php echo $agents["id"]?>.jpeg" width="300" height="200" ></a><br>
@@ -72,6 +76,9 @@ $titre=strip_tags($agents["Prenom"]);
 <a href="cal.php?id=<?=$agents["id"]?>"><img src="PRENDRE RENDEZ-VOUS.png" alt="Home" width="150" height="150">
 <a href="communiquer.html"><img src="PRENDRE RENDEZ-VOUS 2.png" alt="Home" width="150" height="150">
 <a href="CV.php?id=<?=$agents["id"]?>"><img src="PRENDRE RENDEZ-VOUS 3.png" alt="Home" width="150" height="150">
+
+	<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
 
 </body>
 

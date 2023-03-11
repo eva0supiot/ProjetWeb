@@ -56,3 +56,6 @@ foreach($immo_appart as $res){
 <?php
 }
 ?>
+
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>

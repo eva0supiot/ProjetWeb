@@ -6,6 +6,13 @@
 	<title>User clients</title>
 </head>
 <body>
+
+	<!-- pour inclure le menu --> 
+<?php include('menu.php'); ?>
+
 	<h1>Bienvenue chez user clients</h1>
+
+	<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
 </body>
 </html>

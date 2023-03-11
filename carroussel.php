@@ -9,6 +9,9 @@
 
     <body>
 
+        <!-- pour inclure le menu --> 
+        <?php include('menue.php'); ?>
+
     <center>
         <a href="projet.html"><img src="agent-immobilier.jpeg" id="slide1" width="300" height="200">
         <a href="projet2.html"><img src="agent-immobilier2.jpeg" alt="slide2" width="300" height="200">
@@ -23,5 +26,9 @@
                 <input type="text" id="prenom" name="prenom">
             </div>
          </form>
+
+        <!-- pour inclure le footer --> 
+        <?php include('footer.php'); ?>
+
     </body>
 </html>

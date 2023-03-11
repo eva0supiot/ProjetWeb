@@ -36,6 +36,10 @@ $titre=strip_tags($agents["Prenom"]);
 ?>
 
 <head>
+
+	<!-- pour inclure le menu --> 
+	<?php include('menu.php'); ?>
+
 <title>CV agent immobilier</title>
 <meta charset="utf-8" />
 <link href="projet3.css" rel="stylesheet" type="text/css"/> 
@@ -62,5 +66,7 @@ $titre=strip_tags($agents["Prenom"]);
 
 <center><img src="bee.jpeg" width="300" height="350"></center>
 
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
 
 </body>

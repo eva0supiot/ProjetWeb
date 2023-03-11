@@ -7,6 +7,9 @@
 
 <body>
 
+	<!-- pour inclure le menu --> 
+	<?php include('menu.php'); ?>
+
 <h3><center>COMMUNIQUER AVEC L'AGENT</h3><br>
 
 <br>
@@ -17,6 +20,8 @@
 <a href="chat.php"><img src="Service_de_messagerie.png" alt="Home" width="150" height="150">
 <a href="test.php"><img src="envoyer_email.png" alt="Home" width="150" height="150">
 
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
 
 </body>
 </html>

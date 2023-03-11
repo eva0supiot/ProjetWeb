@@ -162,7 +162,7 @@ $titre=strip_tags($maison["nom"]);
 		<p><br /></p>
 
 		<div class="bouton_test">
-			<h4><a href="#">Agent Immobilier</a></h4>
+			<h4><a href="Immo_residentiel.php">Agent Immobilier</a></h4>
 		</div>
 
 		<div class="bouton_test">
@@ -199,5 +199,7 @@ $titre=strip_tags($maison["nom"]);
 	</div>
 </maison>
 
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
 
 <?php

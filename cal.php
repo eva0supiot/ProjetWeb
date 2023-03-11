@@ -267,6 +267,9 @@ echo "L'agent immobilier ne travaille pas durant ce créneau, veuillez en sélec
 
     <body>
 
+        <!-- pour inclure le menu --> 
+        <?php include('menu.php'); ?>
+
 <center><h1>Calendrier de la semaine</h1></center>
 
 <br><br>
@@ -301,5 +304,9 @@ echo "L'agent immobilier ne travaille pas durant ce créneau, veuillez en sélec
 
 </div>
 </form>
+
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
+
 </body>
 

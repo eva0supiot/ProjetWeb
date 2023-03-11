@@ -8,6 +8,9 @@
 
    <body>
 
+<!-- pour inclure le menu --> 
+<?php include('menu.php'); ?>
+
 <?php
 
 try
@@ -37,7 +40,9 @@ foreach($agents as $res){
 	</res>
 </section>
 
-</body>
+<?php } ?>
 
-<?php
-}?>
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
+
+</body>

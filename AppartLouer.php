@@ -6,6 +6,9 @@
 
    <body>
 
+<!-- pour inclure le menu --> 
+<?php include('menu.php'); ?>
+
 <?php
 
 try
@@ -34,6 +37,9 @@ foreach($agents as $res){
          <center><a href="projets.php?id=<?=$res["id"]?>"><img src="agent-immobilier<?php echo $res["id"]?>.jpeg" alt="Bien1" height="134" width="210"></a></center>
 	</res>
 </section>
+
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
 
 </body>
 

@@ -198,5 +198,7 @@ $titre=strip_tags($maison["nom"]);
 	</div>
 </maison>
 
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
 
 <?php

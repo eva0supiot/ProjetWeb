@@ -8,5 +8,8 @@
 <body>
 	<?php include('menuAdmi.php'); ?>
 	<h1>Bienvenue chez user admi</h1>
+
+	<!-- pour inclure le footer --> 
+	<?php include('footer.php'); ?>
 </body>
 </html>

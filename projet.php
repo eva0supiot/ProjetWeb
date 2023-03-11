@@ -7,6 +7,9 @@
 </head>
 
 <body>
+
+	<!-- pour inclure le menu --> 
+<?php include('menu.php'); ?>
 	
 <h3><center><?php echo $_POST['identifiant']; ?> </p></input></h3><br>
 
@@ -34,6 +37,9 @@
 <a href="rdv.html"><img src="PRENDRE RENDEZ-VOUS.png" alt="Home" width="150" height="150">
 <a href="communiquer.html"><img src="PRENDRE RENDEZ-VOUS 2.png" alt="Home" width="150" height="150">
 <a href="CV.html"><img src="PRENDRE RENDEZ-VOUS 3.png" alt="Home" width="150" height="150">
+
+<!-- pour inclure le menu --> 
+<?php include('menu.php'); ?>
 
 </body>
 </html>

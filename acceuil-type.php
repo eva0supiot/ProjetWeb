@@ -18,6 +18,8 @@
         <a href="terrain.php"><img src="immobilier résidentiel-3.png" alt="slide3" width="200" height="200">
         <a href="AppartLouer.php"><img src="immobilier résidentiel-4.png" alt="slide4" width="200" height="200">
 
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
  
 </body>
 
