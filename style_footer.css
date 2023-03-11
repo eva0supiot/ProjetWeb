@@ -1,0 +1,43 @@
+.footer{
+	margin-top: 150px;
+	width: 100%;
+	background: #333;
+	color: #efefef;
+	display: flex;
+  font-weight:300;
+}
+.footer div{
+	text-align: center;
+}
+.colonne3{
+	margin-left: 200px;
+  padding: 60px ;
+
+}
+.colonne1{
+  margin-left: 100px;
+  padding: 60px ;
+}
+
+
+.footer div h3{
+	font-weight:300;
+	margin-bottom: 30px;
+	letter-spacing:1px ;
+	color: gold;
+}
+
+.colonne1 a{
+	display: block;
+	text-decoration: none;
+	color: #efefef;
+	margin-bottom: 10px;
+}
+
+.footer h4 {
+  color: gold;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
