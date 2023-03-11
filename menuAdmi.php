@@ -12,7 +12,7 @@
     <li class="tout_parcourir"><a href="#">Gérer les biens &ensp;</a>
       <ul class="immo">
         <li><a href="#">Ajouter un bien</a></li>
-        <li><a href="#">Supprimer un bien</a></li>
+        <li><a href="tous_les_biens.php">Supprimer un bien</a></li>
       </ul>
     </li>
     <li><a href="recherche.php">Recherche</a></li>

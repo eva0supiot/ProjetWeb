@@ -29,7 +29,7 @@
 		$sql="";
 		$sql=" DELETE FROM `$table` WHERE `$table`.`id` = $id";
 		$result = mysqli_query($db_handle, $sql);
-		?> <h1>L'agent a bien été supprimé </h1><?php
+		?> <h1>L'élément a bien été supprimé </h1><?php
 		//close database
 		mysqli_close($db_handle);
 	else:	// BDD introuvable

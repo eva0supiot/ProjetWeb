@@ -17,7 +17,7 @@
 try
 {
 	// On se connecte à MySQL
-	$mysqlClient = new PDO('mysql:host=localhost;dbname=immobilier;charset=utf8', 'root', 'root');
+	$mysqlClient = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
 }
 
 catch(Exception $e)
@@ -45,7 +45,7 @@ foreach($immo_appart as $res){
 			<h3> <?php echo $res["nom"] ?></h3>
 			<h4><?php echo $res["adresse"] ?></h4>
 			<p><br /></p>
-			<h3><a href="#"> Supprimer </a></h3>
+			<h3><a href="traitementDelete.php?id=<?php echo $res['id'];?>&table=immo_appart"> Supprimer </a></h3>
 		</div>
 	</res>
 </section>
@@ -73,7 +73,7 @@ foreach($immo_res as $res){
 			<h3> <?php echo $res["nom"] ?></h3>
 			<h4><?php echo $res["adresse"] ?></h4>
 			<p><br /></p>
-			<h3><a href="#"> Supprimer </a></h3>
+			<h3><a href="traitementDelete.php?id=<?php echo $res['id'];?>&table=immo_res"> Supprimer </a></h3>
 		</div>
 	</res>
 </section>
@@ -102,7 +102,7 @@ foreach($immo_commerce as $res){
 			<h3> <?php echo $res["nom"] ?></h3>
 			<h4><?php echo $res["adresse"] ?></h4>
 			<p><br /></p>
-			<h3><a href="#"> Supprimer </a></h3>
+			<h3><a href="traitementDelete.php?id=<?php echo $res['id'];?>&table=immo_commerce"> Supprimer </a></h3>
 		</div>
 	</res>
 </section>
@@ -131,7 +131,7 @@ foreach($immo_terrain as $res){
 			<h3> <?php echo $res["nom"] ?></h3>
 			<h4><?php echo $res["adresse"] ?></h4>
 			<p><br /></p>
-			<h3><a href="#"> Supprimer </a></h3>
+			<h3><a href="traitementDelete.php?id=<?php echo $res['id'];?>&table=immo_terrain"> Supprimer </a></h3>
 		</div>
 	</res>
 </section>
