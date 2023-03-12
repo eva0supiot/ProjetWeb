@@ -14,17 +14,17 @@
 	$age=isset($_POST['age'])? $_POST['age'] : "";
 	$etude=isset($_POST['etude'])? $_POST['etude'] : "";
 	$experience=isset($_POST['experience'])? $_POST['experience'] : "";
-	$lundi=isset($_POST['lundi'])? $_POST['lundi'] : "";
+	/*$lundi=isset($_POST['lundi'])? $_POST['lundi'] : "";
 	$mardi=isset($_POST['mardi'])? $_POST['mardi'] : "";
 	$mercredi=isset($_POST['mercredi'])? $_POST['mercredi'] : "";
 	$jeudi=isset($_POST['jeudi'])? $_POST['jeudi'] : "";
-	$vendredi=isset($_POST['vendredi'])? $_POST['vendredi'] : "";
+	$vendredi=isset($_POST['vendredi'])? $_POST['vendredi'] : "";*/
 
 	/*
 	 *  Cette partie est à supprimer
 	 *	elle était la pour le test*/
-	/*
-	$prenom='Rafa';
+	
+	/*$prenom='Rafa';
 	$nom='Federer';
 	$email="roger";
 	$phone=1234;
@@ -47,8 +47,8 @@
 	if($db_found):	// si on trouve la BDD 
 		/***** Requette permettant se supprimer un immobilier à partir de son id et de sa table *****/
 		$sql="";
-		$sql="INSERT INTO `agents` (`Prenom`, `nomAgent`, `Email`, `MotDePasse`, `num`, `specialite`, `age`, `etude`, `experience`, `lundi`, `mardi`, `mercredi`, `jeudi`, `vendredi`)
-			VALUES('$prenom', '$nom', '$email','$motDePasse', $phone, '$specialite', $age, '$etude', '$experience',0,0,0,0,0)";
+		$sql="INSERT INTO `agents` (`Prenom`, `nomAgent`, `Email`,`MotDePasse`, `num`, `specialite`, `age`, `etude`, `experience`, `lundimatin`, `lundiaprem`, `lundi`, `mardimatin`, `mardiaprem`, `mardi`, `mercredimatin`, `mercrediaprem`, `mercredi`, `jeudimatin`, `jeudiaprem`, `jeudi`, `vendredimatin`, `vendrediaprem`, `vendredi`)
+		VALUES('$prenom', '$nom', '$email','$motDePasse', $phone, '$specialite', $age, '$etude', '$experience',9, 0, '8h-16h', 0, 0, '8h-16h', 3, 3, 'Indisponible', 0, 3, '8h-12h', 9, 0, '8h-16h')";
 
 		$result = mysqli_query($db_handle, $sql);
 

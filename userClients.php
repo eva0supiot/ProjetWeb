@@ -6,10 +6,7 @@
 	<title>User Compte</title>
 </head>
 <body>
-
-<!-- pour inclure le menu --> 
-<?php include('menu.php'); ?>
-
+	<?php include('menuClients.php'); ?>
 	<h1>Bonjour vs êtes CO</h1>
 	<p>
 		Ici c'est l'espace perso du BG donc il faudra y faire plein de truc BG les renez vous voir les maisons tout ça tout ça.
@@ -58,9 +55,5 @@
 		Mais après bon je suis pas sur vu qu'on a fait 
 	</p>
 	<h1>La répartition des tâches sans moi !!!!!</h1>
-
-<!-- pour inclure le footer --> 
-<?php include('footer.php'); ?>
-
 </body>
 </html>

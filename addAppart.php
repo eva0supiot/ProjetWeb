@@ -1,55 +1,122 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="tout_parcourir.css" rel="stylesheet" type="text/css"/>
 
-	/*
-	 * Il faudra choisir quel type de passage des informations on conserve
-	 * en fonction de la page qu'il l'appelle faite par Eva ou moi 
-	*/
+	<title>Ajouter un appartement</title>
+</head>
+<body>
+	<!-- En tête d'Eva -->
+    <?php include('menuAdmi.php'); ?>
 
-	$nom=isset($_POST['nom'])? $_POST['nom'] : "";
-	$adresse=isset($_POST['adresse'])? $_POST['adresse'] : "";
-	$prix=isset($_POST['prix'])? $_POST['prix'] : "";
-	$type=isset($_POST['type'])? $_POST['type'] : "";
-	$dimension=isset($_POST['dimension'])? $_POST['dimension'] : "";
-	$chambre=isset($_POST['chambre'])? $_POST['chambre'] : "";
-	$salle_de_bain=isset($_POST['salle_de_bain'])? $_POST['salle_de_bain'] : "";
-	$toilette=isset($_POST['toilette'])? $_POST['toilette'] : "";
-	$cuisine=isset($_POST['cuisine'])? $_POST['cuisine'] : "";
-	$salon=isset($_POST['salon'])? $_POST['salon'] : "";
-	$a_propos=isset($_POST['a_propos'])? $_POST['a_propos'] : "";
-	$caracteristique_principale=isset($_POST['caracteristique_principale'])? $_POST['caracteristique_principale'] : "";
+    <div>
+    	<br>
+    	<br>
+    	<table class="table2" border="2">
+			<form action="traitementAddAppart.php" method="post">
 
-	/*
-	$nom="nom";
-	$adresse="adresse";
-	$prix=100000.000;
-	$type="Maison";
-	$dimension=1.0;
-	$chambre=11;
-	$salle_de_bain=3;
-	$toilette=5;
-	$cuisine=1;
-	$salon=2;
-	$a_propos="riche";
-	$caracteristique_principale="grande";
-	*/
+				<tr>
+					<td>
+						Nom
+					</td>
+					<td>
+						<input type="text" name="nom">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Adresse
+					</td>
+					<td>
+						<input type="text" name="adresse">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Prix
+					</td>
+					<td>
+						<input type="number" name="prix">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Dimension
+					</td>
+					<td>
+						<input type="number" name="dimension">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Nombre de Chambre
+					</td>
+					<td>
+						<input type="number" name="chambre">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Nombre de salle de bain
+					</td>
+					<td>
+						<input type="number" name="salle_de_bain">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Nombre de salle de toilette
+					</td>
+					<td>
+						<input type="number" name="toilette">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Nombre de salle de cuisine
+					</td>
+					<td>
+						<input type="number" name="cuisine">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Nombre de salle de salon
+					</td>
+					<td>
+						<input type="number" name="salon">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						A propos
+					</td>
+					<td>
+						<input type="text" name="a_propos">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Caractéristiques principales
+					</td>
+					<td>
+						<input type="text" name="caracteristique_principale">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input class="bouttonFormulaire" type="submit" name="submit" value="Ajouter">
+					</td>
+				</tr>
+			</form>
+		</table>
+    </div>
 
-	/***** Connexion à la base de donnée projetweb *****/
- 	$database = "projetweb";
-	$db_handle = mysqli_connect('localhost','root','');
-	$db_found = mysqli_select_db($db_handle, $database);
+<!-- pour inclure le footer --> 
+<?php include('footer.php'); ?>
 
-	if($db_found):	// si on trouve la BDD 
-		/***** Requette permettant se supprimer un immobilier à partir de son id et de sa table *****/
-		$sql="";
-		$sql="INSERT INTO `immo_appart` (`nom`, `adresse`, `prix`, `type`, `dimension`, `chambre`, `salle_de_bain`, `toilette`, `cuisine`, `salon`, `a_propos`, `caracteristique_principale`) 
-		VALUES('$nom', '$adresse', $prix, '$type', $dimension, $chambre, $salle_de_bain, $toilette, $cuisine, $salon, '$a_propos', '$caracteristique_principale')";
-
-		$result = mysqli_query($db_handle, $sql);
-
-		//close database
-		mysqli_close($db_handle);
-	else:	// BDD introuvable
-		echo "database not found";
-	endif;
-
-?>
+</body>
+</html>
