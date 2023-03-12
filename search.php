@@ -19,7 +19,7 @@
 	try
 	{
 		// On se connecte à MySQL
-		$mysqlClient = new PDO('mysql:host=localhost;dbname=immobilier;charset=utf8', 'root', 'root');
+		$mysqlClient = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
 	}
 
 	catch(Exception $e)

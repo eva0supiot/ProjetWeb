@@ -4,11 +4,11 @@
 $id= $_GET["id"];
 
 //On se relie à la base de données + on sélectionne les données en fonction de l'id des agents
-            $servname = "localhost"; $dbname = "agentsImmobilier"; $user = "root"; $pass = "root";
+            //$servname = "localhost"; $dbname = "agentsImmobilier"; $user = "root"; $pass = "root";
            
             try{
-                $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
-                $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  
+                $dbco = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+                //$dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  
             
             }
                   

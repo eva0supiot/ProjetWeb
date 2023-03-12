@@ -6,7 +6,14 @@
 	<title>User Compte</title>
 </head>
 <body>
-	<?php include('menuClients.php'); ?>
+	<?php 
+		if (isset($_GET['id'])) {
+			$id = $_GET['id'];
+			//echo "Le nom d'utilisateur est : " . $id;
+		}
+		include('menuClients.php?id=$id');
+
+	 ?>
 	<h1>Bonjour vs êtes CO</h1>
 	<p>
 		Ici c'est l'espace perso du BG donc il faudra y faire plein de truc BG les renez vous voir les maisons tout ça tout ça.
@@ -15,10 +22,6 @@
 		Du coup ce que je vais faire la je pense c'est que je vais charger la BDD ici pour accèder aux données voily voilou bon je vous laisse j'ai du taffe du coup on se revoit tout à l'heure ;-)
 	</p>
 	<?php
-		if (isset($_GET['id'])) {
-			$id = $_GET['id'];
-			echo "Le nom d'utilisateur est : " . $id;
-		}
 
 		$database = "projetweb";
 		$db_handle = mysqli_connect('localhost','root','');

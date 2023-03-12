@@ -6,7 +6,7 @@
 </head>
 
 <!-- pour inclure le menu -->
-<?php include('menu.php'); ?>
+<?php include('menuAdmi.php'); ?>
 
 <br> <br> <br> <br>
 
