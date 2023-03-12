@@ -23,7 +23,7 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-$sqlQuery = "SELECT * FROM `agents` WHERE `specialite` = 'Appartement à louer'";
+$sqlQuery = "SELECT * FROM `agents` WHERE `specialite` = 'Appartement a louer'";
 $requete = $mysqlClient->query($sqlQuery);
 $requete->execute();
 $agents = $requete->fetchAll();

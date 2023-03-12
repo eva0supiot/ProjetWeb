@@ -148,7 +148,7 @@ $agents = $requete->fetchAll();
 
 foreach($agents as $res){
 ?>
-	<?php if ($res["specialite"]=="Immobilier résidentiel")
+	<?php if ($res["specialite"]=="Immobilier residentiel")
 	{
 		// On récupère tout le contenu de la table recipes
 		$sqlQuery = 'SELECT * FROM immo_res';
@@ -208,7 +208,7 @@ foreach($agents as $res){
 	<?php
 	}?>
 
-	<?php if ($res["specialite"]=="Appartement à louer")
+	<?php if ($res["specialite"]=="Appartement a louer")
 	{ 
 		// On récupère tout le contenu de la table recipes
 		$sqlQuery = 'SELECT * FROM immo_appart';
