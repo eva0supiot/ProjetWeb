@@ -72,7 +72,7 @@ $titre=strip_tags($agents["Prenom"]);
 
 <center>
 <a href="cal.php?id=<?=$agents["id"]?>"><img src="PRENDRE RENDEZ-VOUS.png" alt="Home" width="150" height="150">
-<a href="communiquer.html"><img src="PRENDRE RENDEZ-VOUS 2.png" alt="Home" width="150" height="150">
+<a href="contacter.php"><img src="PRENDRE RENDEZ-VOUS 2.png" alt="Home" width="150" height="150">
 <a href="CV.php?id=<?=$agents["id"]?>"><img src="PRENDRE RENDEZ-VOUS 3.png" alt="Home" width="150" height="150">
 
 	<!-- pour inclure le footer --> 

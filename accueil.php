@@ -96,13 +96,13 @@
 
  <div class="carousel">
       <div class="slide active-slide">
-        <img src="bien1.png" alt="Image 1">
+        <img src="maisons_du_projet/maison1_1.png" alt="Image 1">
       </div>
       <div class="slide">
-        <img src="bien2.png" alt="Image 2">
+        <img src="maisons_du_projet/maison2_1.png" alt="Image 2">
       </div>
       <div class="slide">
-        <img src="bien3.png" alt="Image 3">
+        <img src="maisons_du_projet/maison3_1.png" alt="Image 3">
       </div>
     </div>
 
