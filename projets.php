@@ -2,7 +2,7 @@
 //vérification
 if(!isset($_GET["id"]) || empty($_GET["id"])){
 	// pas d'id
-	header("Location: carroussel.php");
+	header("Location: acceuil-type.php");
 	exit;}
 
 // récup de l'id
@@ -65,9 +65,7 @@ $titre=strip_tags($agents["Prenom"]);
 
 <table align="center">
 
-<tr><th>Lundi</th><th>Mardi</th><th>Mercredi</th><th>Jeudi</th><th>Vendredi</th><th>Samedi</th></tr>
-
-<tr><td>9h-18h</td><td>Indisponible</td><td>9h-14h</td><td>9h-18h</td><td>9h-18h</td><td>14-18h</td></tr>
+<tr><th>Lundi</th><th>Mardi</th><th>Mercredi</th><th>Jeudi</th><th>Vendredi</th></tr> <tr><td><?php echo $agents["lundi"] ?></td><td><?php echo $agents["mardi"] ?></td><td><?php echo $agents["mercredi"] ?></td><td><?php echo $agents["jeudi"] ?></td><td><?php echo $agents["vendredi"] ?></td></tr>
 
 </table></h4>
 <br><br>
