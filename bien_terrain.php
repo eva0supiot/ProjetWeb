@@ -95,6 +95,7 @@ $titre=strip_tags($maison["nom"]);
 
 		<br>
 		<div class="titre">
+			<h3>T<?php echo $maison["id"] ?></h3>
 			<h1><?php echo $maison["nom"] ?></h1>
 			<h3><?php echo $maison["adresse"] ?></h3>
 		</div>

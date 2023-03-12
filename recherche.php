@@ -55,11 +55,14 @@
       #searchbar::placeholder {
         opacity: 0.3;
       }
-      /*form, td {
-        padding: 5rem 15rem;
-        width: 32rem;
-        height: 6rem; */
-}
+      form, td {
+        padding: 5rem 10rem;
+      }
+      input {
+        width: 20rem;
+        height: 5rem; 
+        font-size: 30px;
+      }
     </style>
 </head>
 
@@ -81,7 +84,7 @@
     </tr>
     <tr>
       <td colspan="2" align="center">
-        <input class="boutonFormulaire" type="submit" name="submit" value="rechercher" >
+        <input class="boutonFormulaire" type="submit" name="submit" value="go" >
       </td>
     </tr>
   </form>
