@@ -5,6 +5,7 @@ echo '<link rel="stylesheet" type="text/css" href="rdvStyle.css">';
 if (isset($_GET['id'])) {
       $id = $_GET['id'];
       //echo "L'id : " . $id;
+      //include('menuClients.php?id=$id');
     }
 
 if (isset($_GET['table'])) {
@@ -12,7 +13,7 @@ if (isset($_GET['table'])) {
       //echo "La table : " . $table;
     }
 
-    //include('menuClients.php?id=$id');
+    
 
       
 

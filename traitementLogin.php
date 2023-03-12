@@ -43,7 +43,8 @@
 					<?php
 				elseif ($table=='agents'):
 					?> 
-					<a href="userAgents.php?id=<?php echo $data['id']; ?>">Cliquez ici pour vous connecter <?php echo $data['Prenom']; ?></a>
+					<!--<a href="userAgents.php?id=<?php echo $data['id']; ?>">Cliquez ici pour vous connecter <?php echo $data['Prenom']; ?></a>-->
+					<a href="cal.php?id=<?php echo $data["id"]; ?>" >Cliquez ici pour vous connecter </a>
 					<?php
 				endif;
 					

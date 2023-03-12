@@ -95,7 +95,7 @@
     
 <img class="chip" src="wifi.gif"/>
 <img class="visa"src="visa.gif"/>
-	<form method="POST" action="ajouter_bdd.php">
+	<form method="POST" action="validationachat.html">
 		
 		
 		<div class="card-number">
@@ -138,8 +138,10 @@
 		<div class="card-name">
 		<input type="text" id="nom_carte" name="nom_carte" placeholder="Prenom Nom" required></div>
 	
-	</form></div></div>
+	
+</div></div>
 	<br>
 		<input type="submit" value="Valider">
+	</form>
 </body>
 </html>
